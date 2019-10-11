@@ -1,7 +1,7 @@
-FROM openjdk:11.0.4-jre-stretch
-MAINTAINER Gunter Zeilinger <gunterze@gmail.com>
+FROM openjdk:13-buster
+MAINTAINER Gunter Zeilinger <gunterze@protonmail.com>
 
-ENV DCM4CHE_VERSION 5.18.1
+ENV DCM4CHE_VERSION 5.19.0
 
 RUN cd /opt \
     && curl http://maven.dcm4che.org/org/dcm4che/dcm4che-assembly/${DCM4CHE_VERSION}/dcm4che-assembly-${DCM4CHE_VERSION}-bin.tar.gz | tar xz \
