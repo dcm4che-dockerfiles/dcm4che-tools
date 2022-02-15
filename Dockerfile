@@ -1,7 +1,7 @@
-FROM eclipse-temurin:17_35-jdk-focal
+FROM eclipse-temurin:11.0.14_9-jdk-focal
 MAINTAINER Gunter Zeilinger <gunterze@protonmail.com>
 
-ENV DCM4CHE_VERSION 5.25.1
+ENV DCM4CHE_VERSION 5.25.2
 
 RUN cd /opt \
     && curl http://maven.dcm4che.org/org/dcm4che/dcm4che-assembly/${DCM4CHE_VERSION}/dcm4che-assembly-${DCM4CHE_VERSION}-bin.tar.gz | tar xz \
