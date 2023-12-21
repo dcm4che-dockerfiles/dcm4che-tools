@@ -1,7 +1,7 @@
-FROM eclipse-temurin:17.0.8_7-jdk
+FROM eclipse-temurin:17.0.9_9-jdk
 MAINTAINER Gunter Zeilinger <gunterze@protonmail.com>
 
-ENV DCM4CHE_VERSION 5.31.1
+ENV DCM4CHE_VERSION 5.31.2
 
 RUN cd /opt \
     && curl https://www.dcm4che.org/maven2/org/dcm4che/dcm4che-assembly/${DCM4CHE_VERSION}/dcm4che-assembly-${DCM4CHE_VERSION}-bin.tar.gz | tar xz \
